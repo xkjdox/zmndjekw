@@ -3,7 +3,7 @@
 
 city=$( wget -qO- ipinfo.io/city );
 isp=$( wget -qO- ipinfo.io/org );
-ipvps=$( wget -qO- ipinfo.io/ip );
+ipvps=$( wget -qO- ipinfo.io/org | cut -d " " -f 2-10 );
 domain=$( cat /etc/v2ray/domain );
 scversion=$( cat /home/ver );
 figlet -f small -t "WILLIAM"
