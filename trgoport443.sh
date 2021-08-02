@@ -35,13 +35,13 @@ sed -i '/"'""$uuid""'"$/a\,"'""$user""'"' /etc/trojan-go/config.json
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 echo -e "### $user $exp" >> /etc/trojan-go/akun.conf
 systemctl restart trojan-go.service
-trojangolink="trojan-go://${uuid}@${domain}:8443/?sni=${domain}&type=ws&host=${domain}&path=/TrojanGO&encryption=none#${user}"
+trojangolink="trojan-go://${uuid}@${domain}:443/?sni=${domain}&type=ws&host=${domain}&path=/TrojanGO&encryption=none#${user}"
 clear
 echo -e "==========TROJAN-GO ACCOUNT========="
 echo -e "Remarks = ${user}"
 echo -e "IP Addres = ${MYIP}"
 echo -e "Domain = ${domain}"
-echo -e "Port = 8443"
+echo -e "Port = 443"
 echo -e "Path = /TrojanGO"
 echo -e "Expired = $exp"
 echo -e "===================================="
