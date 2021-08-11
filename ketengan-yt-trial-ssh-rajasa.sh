@@ -6,7 +6,7 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 DOMAIN=$(rajasaketengan-yt.williamstore.site);
 echo "Checking VPS"
 clear
-IP=$(34.101.89.255);
+IP=$(34.101.182.246);
 ssl="$(cat ~/log-install.txt | grep -w "Stunnel4" | cut -d: -f2)"
 sqd="$(cat ~/log-install.txt | grep -w "Squid" | cut -d: -f2)"
 ovpn="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
@@ -33,7 +33,7 @@ echo -e "Informasi Trial SSH & OpenVPN"
 echo -e "Username : $Login "
 echo -e "Password : $Pass"
 echo -e "==========================="
-echo -e "Host-IP : 34.101.89.255"
+echo -e "Host-IP : 34.101.182.246"
 echo -e "Host-Domain : rajasaketengan-yt.williamstore.site"
 echo -e "OpenSSH : 22"
 echo -e "SSH WEBSOCKET HTTP : 2052"
