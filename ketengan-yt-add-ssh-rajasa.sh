@@ -51,7 +51,7 @@ echo -e "Dropbear : 109, 143"
 echo -e "SSH WEBSOCKET HTTP : 2052"
 echo -e "SSH WEBSOCKET HTTPS : 2053"
 echo -e "SSL/TLS :$ssl"
-echo -e "PORT KETENGAN YT : 6970
+echo -e "PORT KETENGAN YT : 6970"
 echo -e "Port Squid :$sqd"
 echo -e "OpenVPN : TCP $ovpn http://$IP:81/client-tcp-$ovpn.ovpn"
 echo -e "OpenVPN : UDP $ovpn2 http://$IP:81/client-udp-$ovpn2.ovpn"
